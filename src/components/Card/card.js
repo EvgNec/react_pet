@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import defaultImage from '../no-image.jpg';
 
-const Card = (
+export default function  Card  (
     {
         imgUrl = defaultImage,
         word,
@@ -12,12 +12,12 @@ const Card = (
         eles = '',
         lang,
     }
-) => {
+)  {
     return (
         <>
         <img src={imgUrl} alt={word} width="480"/>
-       <div class="definition">{word}</div> 
-       
+       <div class="definition">{word}</div>        
        </>
     )
 }
+

@@ -1,3 +1,6 @@
+import Card from './Card/card.js';
+import cards from './cards.json';
+
 export const App = () => {
   return (
     <div
@@ -11,6 +14,12 @@ export const App = () => {
       }}
     >
       React homework template
+      <Card
+        imgUrl={cards.pt.word}
+        tag={profile.tag}
+        location={profile.location}
+        avatar={profile.avatar}
+        stats={profile.stats} />
     </div>
   );
 };
