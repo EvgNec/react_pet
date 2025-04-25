@@ -3,7 +3,7 @@ import defaultImage from '../no-image.jpg';
 
 export default function  Card  (
     {
-        imgUrl = defaultImage,
+        // imgUrl = defaultImage,
         word,
         rate,
     }
@@ -11,8 +11,8 @@ export default function  Card  (
     return (
         <>
         {/* <img src={imgUrl ?? defaultImage} alt={word} width="480"/> */}
-       <div class="definition">{word}</div>
-       <div class="definition">{rate}</div>           
+       <div className="definition">{word}</div>
+       <div className="definition">{rate}</div>           
        </>
     )
 }
