@@ -27,7 +27,13 @@ export const App = () => {
         rate={cards[0].rate}
       />
       }
-      {!isOnline &&
+      {!isOnline ?
+        <Card
+        imgUrl={cards.word}
+        word={cards[0].pt.word}
+        rate={cards[0].rate}
+      />
+      :
         <Card
         imgUrl={cards.word}
         word={cards[0].en.word}
