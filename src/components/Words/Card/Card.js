@@ -10,7 +10,7 @@ export default function  Card  (
 )  {
     return (
         <>
-        {/* <img src={imgUrl} alt={word} width="480"/> */}
+        {/* <img src={imgUrl ?? defaultImage} alt={word} width="480"/> */}
        <div class="definition">{word}</div>
        <div class="definition">{rate}</div>           
        </>
