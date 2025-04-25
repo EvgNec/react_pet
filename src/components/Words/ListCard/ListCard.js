@@ -1,9 +1,10 @@
 import Card from '../Card/Card';
  
  function  ListCard  ({ cards }){
+    return (
 <ul>
-    {cards.map( (card, index) => (
-        <li   key={index}> 
+    {cards.map( (card) => (
+        <li   key={card.id}> 
                     <Card                   
                     imgUrl={card.word}
                     word={card.pt.word}
@@ -14,6 +15,7 @@ import Card from '../Card/Card';
     
     )}
 </ul>
+);
  }
 
 
