@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react_pet/static/css/main.7acaea2f.css",
-    "main.js": "/react_pet/static/js/main.c3c99fae.js",
+    "main.js": "/react_pet/static/js/main.47dd658e.js",
     "static/media/no-image.jpg": "/react_pet/static/media/no-image.31b9a581aeea9b43dab7.jpg",
     "index.html": "/react_pet/index.html",
     "main.7acaea2f.css.map": "/react_pet/static/css/main.7acaea2f.css.map",
-    "main.c3c99fae.js.map": "/react_pet/static/js/main.c3c99fae.js.map"
+    "main.47dd658e.js.map": "/react_pet/static/js/main.47dd658e.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.c3c99fae.js"
+    "static/js/main.47dd658e.js"
   ]
 }
