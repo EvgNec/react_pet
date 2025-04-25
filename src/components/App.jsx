@@ -15,11 +15,10 @@ export const App = () => {
     >
       React homework template
       <Card
-        imgUrl={cards.pt.word}
-        tag={profile.tag}
-        location={profile.location}
-        avatar={profile.avatar}
-        stats={profile.stats} />
+        imgUrl={cards.word}
+        word={cards[0].pt.word}
+        rate={cards[0].rate}
+      />
     </div>
   );
 };

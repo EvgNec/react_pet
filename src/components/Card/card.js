@@ -5,6 +5,7 @@ export default function  Card  (
     {
         imgUrl = defaultImage,
         word,
+        rate,
         eu = '',
         tu = '',
         ele = '',
@@ -16,8 +17,15 @@ export default function  Card  (
     return (
         <>
         <img src={imgUrl} alt={word} width="480"/>
-       <div class="definition">{word}</div>        
+       <div class="definition">{word}</div>
+       <div class="definition">{rate}</div>           
        </>
     )
 }
+
+Card.propTypes = {
+    imgUrl: PropTypes.string.isRequired,
+    word: PropTypes.string.isRequired,
+    rate: PropTypes.number.isRequired,
+  };
 
