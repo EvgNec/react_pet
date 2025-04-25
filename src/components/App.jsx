@@ -2,6 +2,7 @@ import Card from './Card/card.js';
 import cards from './cards.json';
 
 export const App = () => {
+  const isOnline = true;
   return (
     <div
       style={{
@@ -13,12 +14,26 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
-      <Card
+      {/* <Card
+        imgUrl={cards.word}
+        word={cards[0].pt.word}
+        rate={cards[0].rate}
+      /> */}
+
+      {isOnline &&
+        <Card
         imgUrl={cards.word}
         word={cards[0].pt.word}
         rate={cards[0].rate}
       />
+      }
+      {!isOnline &&
+        <Card
+        imgUrl={cards.word}
+        word={cards[0].en.word}
+        rate={cards[0].rate}
+      />
+      }
     </div>
   );
 };
