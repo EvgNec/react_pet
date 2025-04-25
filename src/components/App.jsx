@@ -1,6 +1,5 @@
-import Card from './Card/card.js';
-import cards from './cards.json';
-
+import ListCard from './Words/ListCard/ListCard.js';
+import cards from '../components/Words/cards.json';
 export const App = () => {
   const isOnline = true;
   return (
@@ -14,32 +13,17 @@ export const App = () => {
         color: '#010101'
       }}
     >
+    {isOnline && 'Online'}
+    {isOnline ? 'Online' : 'Offline'}
       {/* <Card
         imgUrl={cards.word}
         word={cards[0].pt.word}
         rate={cards[0].rate}
       /> */}
 
-      {isOnline &&
-        <Card
-        imgUrl={cards.word}
-        word={cards[0].pt.word}
-        rate={cards[0].rate}
+        <ListCard cards={cards}      
       />
-      }
-      {!isOnline ?
-        <Card
-        imgUrl={cards.word}
-        word={cards[0].pt.word}
-        rate={cards[0].rate}
-      />
-      :
-        <Card
-        imgUrl={cards.word}
-        word={cards[0].en.word}
-        rate={cards[0].rate}
-      />
-      }
+ 
     </div>
   );
 };
