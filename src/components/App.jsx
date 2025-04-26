@@ -1,20 +1,16 @@
-import SectionWords from './Words/ListCard/ListCard.js';
 import cards from '../components/Words/cards.json';
-
+import Section from './Section/Section.js';
+import ListCard from '../components/Words/ListCard/ListCard.js';
 
 export const App = () => {
   return (
     <div>
-           <SectionWords title="Words Card" cards={cards}/> 
+      <Section title="Words">
+        <ListCard cards={cards} />
+      </Section>
     </div>
   );
 };
-
-
-
-
-
-
 
 // export const App = () => {
 //   const isOnline = true;
@@ -37,9 +33,9 @@ export const App = () => {
 //         rate={cards[0].rate}
 //       /> */}
 
-//         <ListCard cards={cards}      
+//         <ListCard cards={cards}
 //       />
- 
+
 //     </div>
 //   );
 // };

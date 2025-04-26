@@ -1,0 +1,44 @@
+[
+    {
+        "pt": {
+            "word": "querer",
+            "Eu": "quero",
+            "Tu": "queres",
+            "Ele": "quer",
+            "Nos": "queremos",
+            "Eles": "querem"
+        },
+        "en": {
+            "word": "want"
+        },
+        "ru": {
+            "word": "хочу"
+        },
+        "uk": {
+            "word": "бажаю"
+        },
+        "rate": 0,
+        "id": 1
+    },
+    {
+        "pt": {
+            "word": "poder",
+            "Eu": "posso",
+            "Tu": "podes",
+            "Ele": "pode",
+            "Nos": "podemos",
+            "Eles": "podem"
+        },
+        "en": {
+            "word": "can"
+        },
+        "ru": {
+            "word": "мочь"
+        },
+        "uk": {
+            "word": "могти"
+        },
+        "rate": 0,
+        "id": 2
+    }
+]

@@ -2,8 +2,11 @@ import ListCard from '../ListCard/ListCard';
 import PropTypes from 'prop-types';
 
 function SectionWords({ title, cards }) {
+
+
   return (
     <div>
+    <h2>{title}</h2>
       {title && <h2>{title}</h2>}
       <ListCard cards={cards} />
     </div>
