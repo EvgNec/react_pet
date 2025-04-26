@@ -1,10 +1,14 @@
 import cards from '../components/Words/cards.json';
 import Section from './Section/Section.js';
-import ListCard from '../components/Words/ListCard/ListCard.js';
+import ListCard from 'components/Words/ListCard/ListCard.js';
+import { PageTitle } from './Icons/PageTitle/PageTitle';
 
 export const App = () => {
   return (
     <div>
+      <Section title="Icons" visible="false">
+        <PageTitle text="Test" />
+      </Section>
       <Section title="Words">
         <ListCard cards={cards} />
       </Section>
