@@ -1,4 +1,11 @@
 @import-normalize; /* bring in normalize.css styles */
+:root {
+  --color-primary-text: #212121;
+  --color-secondary-text:#757575;
+  --color-green:#4caf50;
+  --color-blue:#2196f3;
+  --color-red:#f44336;
+}
 
 body {
   margin: 0;

@@ -1,3 +1,4 @@
+import '../index.css';
 import cards from '../components/Words/cards.json';
 import Section from './Section/Section.js';
 import ListCard from 'components/Words/ListCard/ListCard.js';
