@@ -2,12 +2,15 @@ import cards from '../components/Words/cards.json';
 import Section from './Section/Section.js';
 import ListCard from 'components/Words/ListCard/ListCard.js';
 import { PageTitle } from './Icons/PageTitle/PageTitle';
+import { EventBoard } from './Icons/EventBoard/EventBoard';
+import eventsDate from './Icons/events.json';
 
 export const App = () => {
   return (
     <div>
       <Section title="Icons" visible="false">
-        <PageTitle text="Test" />
+        <PageTitle text="1 CORE WORLDS CONFERECE" />
+        <EventBoard events={eventsDate}/>
       </Section>
       <Section title="Words">
         <ListCard cards={cards} />
