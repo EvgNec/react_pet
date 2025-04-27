@@ -1,49 +1,47 @@
-import css from './Event.module.css';
 import PropTypes from 'prop-types';
-import {formatEventStart} from '../../../Utils/FormatEventStart.js';
-import {formatEventDuration} from '../../../Utils/FormatEventDuration.js';
+import {formatEventStart, formatEventDuration} from '../../../Utils';
+import { iconSize } from '../../../constans'
 import {
   FaMapMarkerAlt,
   FaUserAlt,
   FaCalendarAlt,
   FaClock,
 } from 'react-icons/fa';
+import { Card, EventName, Info, Chip } from './Event.styled';
 
 export const Event = ({ name, location, speaker, type, start, finish }) => {
     const formattedStart= formatEventStart(start);
-    // const Duration = formatEventDuration(start,finish);
-    console.log("🚀 ~ Event ~ start,finish:", start,finish)
-  
-  return (
-    <div className={css.event}>
-      <h2 className={css.title}>{name}</h2>
-      <p className={css.info}>
-        <FaMapMarkerAlt className={css.icon} size={16} />
-        {location}
-      </p>
-      <p className={css.info}>
-        <FaUserAlt className={css.icon} size={16} />
-        {speaker}
-      </p>
-      <p className={css.info}>
-        <FaCalendarAlt className={css.icon} size={16} />
-        {formattedStart}
-      </p>
-      <p className={css.info}>
-        <FaClock className={css.icon} size={16} />
-        {finish}
-      </p>
-      <span className={css.chip}>{type}</span>
-    </div>
-  );
-};
+    const duration = formatEventDuration(start,finish);
+    
+    return (
+      <Card>
+        <EventName>{name}</EventName>
+        <Info>
+          <FaMapMarkerAlt size={iconSize.sm} />
+          {location}
+        </Info>
+        <Info>
+          <FaUserAlt size={iconSize.sm} />
+          {speaker}
+        </Info>
+        <Info>
+          <FaCalendarAlt size={iconSize.sm} />
+          {formattedStart}
+        </Info>
+        <Info>
+          <FaClock size={iconSize.sm} />
+          {duration}
+        </Info>
+        <Chip eventType={type}>{type}</Chip>
+      </Card>
+    );
+  };
 
 Event.propTypes = {
   name: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   speaker: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  time: PropTypes.arrayOf(),
   start: PropTypes.string.isRequired,
   finish: PropTypes.string.isRequired,
 };
