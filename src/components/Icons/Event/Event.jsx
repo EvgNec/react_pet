@@ -9,9 +9,11 @@ import {
   FaClock,
 } from 'react-icons/fa';
 
-export const Event = ({ name, location, speaker, type, start, end }) => {
+export const Event = ({ name, location, speaker, type, start, finish }) => {
     const formattedStart= formatEventStart(start);
-    const Duration = formatEventDuration(start,end);
+    // const Duration = formatEventDuration(start,finish);
+    console.log("🚀 ~ Event ~ start,finish:", start,finish)
+  
   return (
     <div className={css.event}>
       <h2 className={css.title}>{name}</h2>
@@ -29,7 +31,7 @@ export const Event = ({ name, location, speaker, type, start, end }) => {
       </p>
       <p className={css.info}>
         <FaClock className={css.icon} size={16} />
-        {Duration}
+        {finish}
       </p>
       <span className={css.chip}>{type}</span>
     </div>
@@ -41,6 +43,7 @@ Event.propTypes = {
   location: PropTypes.string.isRequired,
   speaker: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
+  time: PropTypes.arrayOf(),
   start: PropTypes.string.isRequired,
-  end: PropTypes.string.isRequired,
+  finish: PropTypes.string.isRequired,
 };

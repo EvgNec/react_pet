@@ -13,7 +13,7 @@ export const EventBoard = ({ events }) => {
           speaker={speaker}
           type={type}
           start={time.start}
-          end={time.end}
+          finish={time.finish}
         />
       ))}
     </div>
@@ -27,8 +27,8 @@ EventBoard.propTypes = {
       location: PropTypes.string.isRequired,
       speaker: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
-      start: PropTypes.string.isRequired,
-      end: PropTypes.string.isRequired,
+      start: PropTypes.string,
+      finish: PropTypes.string,
     })
   ),
 };
