@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
-import {formatEventStart, formatEventDuration} from '../../../Utils';
+// import {formatEventStart, formatEventDuration} from '../../../Utils';
+import {formatEventStart} from '../../../Utils/formatEventStart.js';
+import {formatEventDuration} from '../../../Utils/formatEventDuration.js';
 import { iconSize } from '../../../constans'
 import {
   FaMapMarkerAlt,
