@@ -1,4 +1,4 @@
-import cats from '../../cats.json';
+import cats from '../cats.json';
 import AppBar from '../AppBar/AppBar';
 import CatList from '../CatList/CatList';
 import css from './Cat.module.css';

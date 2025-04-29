@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import defaultImage from '../no-image.jpg';
+// import defaultImage from '../no-image.jpg';
 
 export default function  Card  (
     {

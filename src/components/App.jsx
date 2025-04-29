@@ -1,21 +1,27 @@
 import '../index.css';
+import 'modern-normalize';
 import cards from '../components/Words/cards.json';
 import Section from './Section/Section.js';
 import ListCard from 'components/Words/ListCard/ListCard.js';
+import Cats from './Cats/App/Cat';
 import { PageTitle } from './Icons/PageTitle/PageTitle';
 import { EventBoard } from './Icons/EventBoard/EventBoard';
 import eventsDate from './Icons/events.json';
 
 export const App = () => {
+  const visibleOff = false;
   return (
     <div>
-      <Section title="Icons" visible="false">
+      <Section title="Cats" visible="false">
+        <Cats/>
+      </Section>
+     {visibleOff && <Section title="Icons" visible="false">
         <PageTitle text="1 CORE WORLDS CONFERECE" />
         <EventBoard events={eventsDate}/>
-      </Section>
-      <Section title="Words">
+      </Section>}
+      {visibleOff && <Section title="Words">
         <ListCard cards={cards} />
-      </Section>
+      </Section>}
     </div>
   );
 };
