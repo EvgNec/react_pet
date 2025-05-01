@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": "Jacob Mercer",
+    "email": "j.mercer@mail.com",
+    "age": 32,
+    "active": true,
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSXROocZrkkIe53IYPwZ_3D4eWC93K28J1rg&s"
+  },
+  {
+    "id": "2",
+    "name": "Adrian Cross",
+    "email": "a.cross@mail.com",
+    "age": 27,
+    "active": false,
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGwBdjPVROT1nDLADlMU8yjUtqZRnuRDl0rA&s"
+  },
+  {
+    "id": "3",
+    "name": "Olendau Jackson",
+    "email": "o.jackson@mail.com",
+    "age": 39,
+    "active": true,
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Vmtqupl5WKIsVe83rJSzJmWfIn-sdOq9P8Rk8iY7ymK6ZhgRrNv85sgYAjwHUsCiik0&usqp=CAU"
+  },
+  {
+    "id": "4",
+    "name": "Mary Akleinson",
+    "email": "m.akleinson@mail.com",
+    "age": 24,
+    "active": false,
+    "avatar": null
+  }
+]

@@ -7,14 +7,20 @@ import Cats from './Cats/App/Cat';
 import { PageTitle } from './Icons/PageTitle/PageTitle';
 import { EventBoard } from './Icons/EventBoard/EventBoard';
 import eventsDate from './Icons/events.json';
+import pilots from '../components/Pilot/pilots.json';
+import { PilotList } from './Pilot/PilotList/PilotList';
 
 export const App = () => {
   const visibleOff = false;
   return (
     <div>
-      <Section title="Cats" visible="false">
+      <Section title="Pilots" visible="false">
+<PageTitle text="Best pilots of our galaxy!"/>
+<PilotList items={pilots} />
+</Section>
+     {visibleOff && <Section title="Cats" visible="false">
         <Cats/>
-      </Section>
+      </Section>}
      {visibleOff && <Section title="Icons" visible="false">
         <PageTitle text="1 CORE WORLDS CONFERECE" />
         <EventBoard events={eventsDate}/>
