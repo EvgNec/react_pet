@@ -11,7 +11,7 @@ import pilots from '../components/Pilot/pilots.json';
 import { PilotList } from './Pilot/PilotList/PilotList';
 
 export const App = () => {
-  const visibleOff = false;
+  const visibleOff = true;
   return (
     <div>
       <Section title="Pilots" visible="false">
