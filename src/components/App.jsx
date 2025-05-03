@@ -9,6 +9,8 @@ import { EventBoard } from './Icons/EventBoard/EventBoard';
 import eventsDate from './Icons/events.json';
 import pilots from '../components/Pilot/pilots.json';
 import { PilotList } from './Pilot/PilotList/PilotList';
+import {ThemeProvider} from '@emotion/react';
+import {theme}from '../constans';
 
 export const App = () => {
   const visibleOff = true;
@@ -23,7 +25,9 @@ export const App = () => {
       </Section>}
      {visibleOff && <Section title="Icons" visible="false">
         <PageTitle text="1 CORE WORLDS CONFERECE" />
+        <ThemeProvider theme={theme}>
         <EventBoard events={eventsDate}/>
+        </ThemeProvider>
       </Section>}
       {visibleOff && <Section title="Words">
         <ListCard cards={cards} />
