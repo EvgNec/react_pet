@@ -45,11 +45,11 @@ export const Chip = styled.span`
   background-color: ${({ eventType, theme }) => {
     switch (eventType) {
       case 'free':
-        return '#4caf50';
+        return 'var(--color-green)';
       case 'paid':
-        return '#2196f3';
+        return 'var(--color-blue)';
       case 'vip':
-        return '#f44336';
+        return 'var(--color-red)';
       default:
         return '#010101';
     }
